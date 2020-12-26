@@ -13,7 +13,7 @@ class CreateSignsTable extends Migration
      */
     public function up()
     {
-        Schema::create('_signs', function (Blueprint $table) {
+        Schema::create('signs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateSignsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_signs');
+        Schema::dropIfExists('signs');
     }
 }
